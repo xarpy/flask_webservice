@@ -1,0 +1,19 @@
+[Unit]
+Description=Webservice application gunicorn instance
+After=network.target
+
+[Service]
+User=root
+Group=nginx
+WorkingDirectory=/var/www/webservice
+Environment="PATH=/home/<USER_FOLDER>/miniconda3/envs/webservice/bin"
+ExecStart=/home/<USER_FOLDER>/miniconda3/envs/webservice/bin/gunicorn \
+ -u root \
+ -w 3 \
+ -b unix:app.sock \
+ --log-file /var/log/webservice/gunicorn.log --log-level=DEBUG \
+ --timeout 300 \
+ main:app
+
+[Install]
+WantedBy=multi-user.target
