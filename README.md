@@ -6,7 +6,7 @@
 
 Pequeno webservice, criado em Python e framework Flask, utilizando de recursos mais novos e variados para construir um projeto estável de um webservice.
 
-## Dependecies
+## Pacotes
 
 Segue a lista de pacotes utilizados no projeto.
 
