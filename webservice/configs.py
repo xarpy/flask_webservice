@@ -11,6 +11,10 @@ load_dotenv(dotenv_path=env_path)
 
 class Config:
     SECRET_KEY = os.getenv('SECRET_KEY')
+    SQLALCHEMY_DATABASE_URI = os.getenv('DB')
+    SQLALCHEMY_TRACK_MODIFICATIONS = False
+    SQLALCHEMY_POOL_RECYCLE = 500
+    PROPAGATE_EXCEPTIONS = True
 
 
 class Development(Config):
