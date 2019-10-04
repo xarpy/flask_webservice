@@ -12,16 +12,15 @@ Segue a lista de pacotes utilizados no projeto.
 
 Package           | Version  |
 ------------------| ---------|
-Flask             | 1.1.1    |
-Flask-Cors        | 3.0.8    |
-Flask-Migrate     | 2.5.2    |
-flask-restplus    | 0.13.0   |
-Flask-SQLAlchemy  | 2.4.1    |
-gunicorn          | 19.9.0   |
-marshmallow       | 3.2.0    |
-python-dotenv     | 0.10.3   |
-requests          | 2.22.0   |
-SQLAlchemy        | 1.3.8    |
+[Flask]([flask-url])             | 1.1.1    |
+[Flask-Cors]([flask_cors-url])        | 3.0.8    |
+[Flask-Migrate]([flask_migrate-url])     | 2.5.2    |
+[flask-restplus]([flask_restplus-url])    | 0.13.0   |
+[Flask-SQLAlchemy]([flask-url])  | 2.4.1    |
+[gunicorn]([gunicorn-url])          | 19.9.0   |
+[marshmallow]([marshmallow-url])       | 3.2.0    |
+[python-dotenv]([python_dotenv-url])          | 0.10.3   |
+[requests]([requests-url])          | 2.22.0   |
 
 
 ## Exemplo de uso:
@@ -67,4 +66,12 @@ Distribuido pela licença GNU GENERAL PUBLIC . Veja ``LICENSE`` para maiores det
 [python-image]: https://img.shields.io/badge/python-v3.7-blue
 [flask-image]: https://img.shields.io/badge/flask-v1.1.1-blue
 [python-url]: https://www.python.org/downloads/release/python-374/
-[flask-url]: https://img.shields.io/pypi/pyversions/flask
+[flask-url]: https://flask.palletsprojects.com/en/1.1.x/
+[flask_cors-url]: https://flask-cors.readthedocs.io/en/latest/
+[flask_migrate-url]: https://flask-migrate.readthedocs.io/en/latest/
+[flask_restplus-url]: https://flask-restplus.readthedocs.io/en/stable/index.html
+[python_dotenv-url]: https://github.com/theskumar/python-dotenv
+[requests-url]: https://requests.kennethreitz.org/en/master/
+[flask_sqllchemy-url]: https://flask-sqlalchemy.palletsprojects.com/en/2.x/
+[gunicorn-url]: http://docs.gunicorn.org/en/latest/index.html
+[marshmallow-url]: https://marshmallow.readthedocs.io/en/stable/index.html
