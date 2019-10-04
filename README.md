@@ -10,17 +10,17 @@ Pequeno webservice, criado em Python e framework Flask, utilizando de recursos m
 
 Segue a lista de pacotes utilizados no projeto.
 
-Package           | Version  |
-------------------| ---------|
-[Flask]([flask-url])             | 1.1.1    |
-[Flask-Cors]([flask_cors-url])        | 3.0.8    |
-[Flask-Migrate]([flask_migrate-url])     | 2.5.2    |
-[flask-restplus]([flask_restplus-url])    | 0.13.0   |
-[Flask-SQLAlchemy]([flask-url])  | 2.4.1    |
-[gunicorn]([gunicorn-url])          | 19.9.0   |
-[marshmallow]([marshmallow-url])       | 3.2.0    |
-[python-dotenv]([python_dotenv-url])          | 0.10.3   |
-[requests]([requests-url])          | 2.22.0   |
+Package                             | Version  |
+------------------------------------| ---------|
+[Flask][flask-url]                  | 1.1.1    |
+[Flask-Cors][flask_cors-url]        | 3.0.8    |
+[Flask-Migrate][flask_migrate-url]  | 2.5.2    |
+[flask-restplus][flask_restplus-url]| 0.13.0   |
+[Flask-SQLAlchemy][flask-url]       | 2.4.1    |
+[gunicorn][gunicorn-url]            | 19.9.0   |
+[marshmallow][marshmallow-url]      | 3.2.0    |
+[python-dotenv][python_dotenv-url]  | 0.10.3   |
+[requests][requests-url]            | 2.22.0   |
 
 
 ## Exemplo de uso:
