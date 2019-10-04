@@ -6,12 +6,12 @@ After=network.target
 User=root
 Group=nginx
 WorkingDirectory=/var/www/webservice
-Environment="PATH=/home/<USER_FOLDER>/miniconda3/envs/webservice/bin"
-ExecStart=/home/<USER_FOLDER>/miniconda3/envs/webservice/bin/gunicorn \
+Environment="PATH=<PATH_TO_YOUR_PYTHON_OR_ENV_FOLDER>"
+ExecStart=<PATH_TO_YOUR_PYTHON_OR_ENV_FOLDER>/gunicorn \
  -u root \
  -w 3 \
  -b unix:app.sock \
- --log-file /var/log/webservice/gunicorn.log --log-level=DEBUG \
+ --log-file /var/log/webservice/webservice.log --log-level=DEBUG \
  --timeout 300 \
  main:app
 
