@@ -19,7 +19,6 @@ Package                                      | Version  |
 [Flask-SQLAlchemy][flask_sqllchemy-url]      | 2.4.1    |
 [flask-swagger-ui][flask_swagger_ui-url]     | 2.4.1    |
 [gunicorn][gunicorn-url]                     | 19.9.0   |
-[marshmallow][marshmallow-url]               | 3.2.0    |
 [python-dotenv][python_dotenv-url]           | 0.10.3   |
 [requests][requests-url]                     | 2.22.0   |
 
