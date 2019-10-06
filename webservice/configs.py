@@ -5,19 +5,17 @@ from pathlib import Path
 
 from dotenv import load_dotenv
 
-env_path = Path('.') / '.env'
+env_path = str(Path().cwd()) + '/.env'
 load_dotenv(dotenv_path=env_path)
-
-
-basedir = os.path.abspath(os.path.dirname(__file__))
 
 
 class Config:
     SECRET_KEY = os.getenv('SECRET_KEY')
-    SQLALCHEMY_DATABASE_URI = 'sqlite:///' + os.path.join(basedir, 'weather.db')
+    SQLALCHEMY_DATABASE_URI = 'sqlite:///' + (str(Path().cwd()) + '/weather.db')
     SQLALCHEMY_TRACK_MODIFICATIONS = False
     SQLALCHEMY_POOL_RECYCLE = 500
     PROPAGATE_EXCEPTIONS = True
+    TOKEN = os.getenv('TOKEN')
 
 
 class Development(Config):

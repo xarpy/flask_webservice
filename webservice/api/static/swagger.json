@@ -1,0 +1,141 @@
+{
+    "openapi": "3.0.2",
+    "info": {
+      "title": "FLASK WEBSERVICE WEATHER",
+      "description": "Little webservice in flask, to consume date api weather",
+      "version": "1.0",
+      "contact": {
+        "email": "teste@email.com"
+      }
+    },
+    "servers": [
+      {
+        "url": "http://127.0.0.1:5000/",
+        "description": "Developer server"
+      }
+    ],
+    "tags": [
+      {
+        "name": "Weather City",
+        "description": "Example API for requesting and return data for 15 days to weather statistics"
+      },
+      {
+        "name": "Weather Analisys",
+        "description": "Example API for requesting and return city with major temperature and list of city with media to precipitation."
+      }
+    ],
+    "paths": {
+      "/cidade?id=<CITY_ID>": {
+        "post": {
+          "tags": [
+            "Weather City"
+          ],
+          "summary": "Get information of city",
+          "operationId": "api.resources.WeatherCity.post",
+          "description": "Capture all information ofr 15 days",
+          "parameters": [
+            {
+              "in": "query",
+              "name": "id",
+              "description": "id the city",
+              "required": true
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "Success",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "example": {
+                      "message": "transfer of the request in API Weather"
+                    }
+                  }
+                }
+              }
+            },
+            "400": {
+              "description": "Not Found",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "example": {
+                      "message": "city not found"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "/analise?data_final=<DATA>&data_final=<DATA>": {
+        "post": {
+          "tags": [
+            "Weather Analisys"
+          ],
+          "summary": "Access Status of the lines",
+          "operationId": "api.resources.WeatherAnalisys.post",
+          "description": "List the city with major temperature and media of precipitation in citys",
+          "parameters": [
+            {
+              "in": "query",
+              "name": "data_inicial",
+              "description": "Date for used in search",
+              "required": true
+            },
+            {
+              "in": "query",
+              "name": "data_final",
+              "description": "Date for used in search",
+              "required": true
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "Success",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "type": "array",
+                    "items": {
+                      "example": {
+                        "message": [
+                          {
+                            "name": "São Paulo",
+                            "state": "SP",
+                            "country": "BR",
+                            "max_temperature": "39"
+                          },
+                          {
+                            "name": "João Pessoa",
+                            "media_precipitation": "1"
+                          },
+                          {
+                            "name": "Recife",
+                            "media_precipitation": "10"
+                          }
+                        ]
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "404": {
+              "description": "Not Found",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "example": {
+                      "message": "The value date is incorrect"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
