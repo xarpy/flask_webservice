@@ -15,7 +15,7 @@ Package                                      | Version  |
 [Flask][flask-url]                           | 1.1.1    |
 [Flask-Cors][flask_cors-url]                 | 3.0.8    |
 [Flask-Migrate][flask_migrate-url]           | 2.5.2    |
-[flask-Restful][flask_restplus-url]          | 0.13.0   |
+[flask-Restful][flask_restful-url]           | 0.3.7    |
 [Flask-SQLAlchemy][flask_sqllchemy-url]      | 2.4.1    |
 [flask-swagger-ui][flask_swagger_ui-url]     | 2.4.1    |
 [gunicorn][gunicorn-url]                     | 19.9.0   |
