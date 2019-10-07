@@ -21,9 +21,10 @@ def format_date(date, check=False, default=True):
     if check is False and default is True:
         return date.strftime("%d/%m/%Y")
     elif check is True:
-        if parse(date, fuzzy=False):
-            return True
-        else:
+        try:
+            if parse(date, fuzzy=True):
+                return True
+        except ValueError:
             return False
     else:
         return parse(date)
